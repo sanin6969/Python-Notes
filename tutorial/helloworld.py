@@ -716,7 +716,7 @@
     
     
 #                                                   TODO: OOOOOOPS
-# example 1
+#TODO  example 1
 # class empolyees:
 #     company_name='abcd technologies'
 #     company_locaton='calicut'
@@ -733,35 +733,124 @@
 # obj2.get_details
 
 
-# example 2
-class Student:
-    school_name='abc hss'
-    def __init__(self,Stu_no,Stu_name,Stu_class):
-        self.student_no=Stu_no
-        self.student_name=Stu_name
-        self.student_class=Stu_class
+# TODO example 2
+# class Student:
+#     school_name='abc hss'
+#     def __init__(self,Stu_no,Stu_name,Stu_class):
+#         self.student_no=Stu_no
+#         self.student_name=Stu_name
+#         self.student_class=Stu_class
         
-    def display_details(self):
-        print(f'name:{self.student_name}\t roll number:{self.student_no}\tclass:{self.student_class}\t school:{Student.school_name}')
+#     def display_details(self):
+#         print(f'name:{self.student_name}\t roll number:{self.student_no}\tclass:{self.student_class}\t school:{Student.school_name}')
         
-    def set_marks(self,phy,che,mat,cs):
-        self.physics=phy
-        self.chemistry=che
-        self.maths=mat
-        self.computer_science=cs     
-        print(f'physics:{self.physics}\nchemistry:{self.chemistry}\nmaths:{self.maths}\ncomputer-science:{self.computer_science}')
+#     def set_marks(self,phy,che,mat,cs):
+#         self.physics=phy
+#         self.chemistry=che
+#         self.maths=mat
+#         self.computer_science=cs     
+#         print(f'physics:{self.physics}\nchemistry:{self.chemistry}\nmaths:{self.maths}\ncomputer-science:{self.computer_science}')
         
-    def get_average(self):
-        return(self.physics+self.chemistry+self.maths+self.computer_science)/4    
+#     def get_average(self):
+#         return(self.physics+self.chemistry+self.maths+self.computer_science)/4    
                      
-student1=Student(1,'sanin',10)
-student1.display_details()  
-student1.set_marks(10,15,20,30)    
-print('average marks:',student1.get_average())
+# student1=Student(1,'sanin',10)
+# student1.display_details()  
+# student1.set_marks(10,15,20,30)    
+# print('average marks:',student1.get_average())
 
-print('-----------------------------------------------')
+# print('-----------------------------------------------')
 
-srtudent2=Student(2,'bucky',8)
-srtudent2.display_details()
-srtudent2.set_marks(30,56,79,200)
-print('average mark:',srtudent2.get_average())
+# srtudent2=Student(2,'bucky',8)
+# srtudent2.display_details()
+# srtudent2.set_marks(30,56,79,200)
+# print('average mark:',srtudent2.get_average())
+
+# class methods FIXME: DOUBTT
+# class Student:
+#     school_name='abc hss'
+#     def __init__(self,Stu_no,Stu_name,Stu_class):
+#         self.student_no=Stu_no
+#         self.student_name=Stu_name
+#         self.student_class=Stu_class
+        
+#     def display_details(self):
+#         print(f'name:{self.student_name}\t roll number:{self.student_no}\tclass:{self.student_class}\t school:{Student.school_name}')
+        
+    
+#     def get_school(self):
+#         print('school Name :',self.school_name)    
+        
+# Student.get_school()        
+
+# TODO Class methods and static methods
+# class Student:
+#     school_name='abc hss'
+#     def __init__(self,Stu_no,Stu_name,Stu_class):
+#         self.student_no=Stu_no
+#         self.student_name=Stu_name
+#         self.student_class=Stu_class
+        
+#     def display_details(self):
+#         print(f'name:{self.student_name}\t roll number:{self.student_no}\tclass:{self.student_class}\t school:{Student.school_name}')
+        
+#     # class methods    
+#     @classmethod 
+#     def get_school(cls):
+#         print('school Name :',cls.school_name)  
+        
+#     # static methods   
+#     @staticmethod
+#     def about_us():
+#         print('this school is the best among others')    
+        
+# Student.get_school() 
+# Student.about_us()       
+
+# TODO sequence item as instance variable
+# class Student:
+#     def __init__(self,id,name,marks:dict):
+#         self.Student_id=id
+#         self.student_name=name
+#         self.student_marks=marks
+        
+#     def display_details(self):
+#         print(f'NAME:{self.student_name}\t ROLL NO :{self.Student_id}')
+            
+#     def mark_percent(self):
+#         total=0
+#         for i in self.student_marks.values():
+#             total+=i
+#             per=(total/400)*100
+#         print('percentage of mark is :',per)        
+# s1=Student(1,'sanin',{'phy':67,'che':78,'mat':90})           
+# s1.display_details()
+# s1.mark_percent() 
+
+#TODO  object of a class is an another object of a class
+# class Company:
+#     def __init__(self,Name,Dir,Loc,Gm):
+#         self.Company_name=Name
+#         self.Company_Director=Dir
+#         self.Company_location=Loc
+#         self.company_GManager=Gm
+        
+# class Employee:
+#     def __init__(self,emp_name,emp_id,emp_age,emp_company=Company):
+#         self.employee_name=emp_name
+#         self.employe_id=emp_id
+#         self.employee_age=emp_age
+#         self.employee_company=emp_company
+        
+#     def Print_details(self):
+#         print(f'Employ Nmae:{self.employee_name}'
+#             f'\nEmploye id:{self.employe_id}'
+#             f'\nEmploye age:{self.employee_age}'
+#             f'\nEmploye Company:{self.employee_company.Company_name}'
+#             f'\nDirector Name:{self.employee_company.Company_Director}')    
+        
+# c1=Company('Bridgeon','anas','calicut','udaif')
+# e1=Employee('sanin',1001,20,c1)        
+# e1.Print_details()
+
+
