@@ -261,13 +261,6 @@
 #     for y in jjk:
 #         print(x,y)
 
-# FIXME: loop 1
-# Input: s = "abcd", t = "abcde"
-# Output: "e"
-# Explanation: 'e' is the letter that was added.
-# answer
-# s = "abcd"
-# t = "abcde"
 
 #                                               TODO: LISTS
 # 
@@ -474,11 +467,11 @@
 # TODO loop in Tuples
 # tuples=('toji','eren','tanjiro','nezuko','zenisthu')
 # for x in tuples:
-    # print(x)
+#     print(x)
 # Loop through index
 # tuples=('toji','eren','tanjiro','nezuko','zenisthu')
 # for x in range(len(tuples)):
-    # print(tuples[x])
+#     print(tuples[x])
     
 #  while loops
 # tuples=('toji','eren','tanjiro','nezuko','zenisthu')
@@ -514,12 +507,12 @@
 
 # TODO remove
 # marvel={'bucky','steve','ironman','wanda'}
-# marvel.remove('bucky')
+# marvel.remove('buckya')
 # print(marvel)
 
 # TODO discard
 # marvel={'bucky','steve','ironman','wanda'}
-# marvel.discard('buckya')
+# marvel.discard('bucky')
 # print(marvel)
 
 # TODO pop clear  del
@@ -672,6 +665,42 @@
 #     print(f'hi  {name} age is {age} place is {place}')   
 # myfunction('sanin')
 
+# TODO Recursion
+# def evennums(num):
+#     print(num)
+#     if num==2:
+#         return num
+#     else:
+#         return evennums(num-2)
+# evennums(8)    
+
+# TODO Lambda
+# fistName=lambda fn,ln:print(fn+' '+ln)
+
+# fistName('muhammed' ,'sanin')
+
+# TODO Decorators
+# def my_decorator(func):
+#     def wrapper():
+#         print('this is wrapper')
+#         func()
+#         print('this is func')
+#     return wrapper
+
+# @my_decorator
+# def say_hello():
+#     print('hello guys')        
+
+# say_hello()
+
+#  TODO Iterators
+# my_list = [1, 2, 3, 4, 5]
+# my_iter = iter(my_list)
+# print(next(my_iter))  # Output: 1
+# print(next(my_iter))  # Output: 2
+# print(next(my_iter))  # Output: 2
+# print(next(my_iter))  # Output: 2
+
 
 
 #                                    TODO: PYTHON MODULES
@@ -780,7 +809,7 @@
     
 #     def get_school(self):
 #         print('school Name :',self.school_name)    
-        
+           
 # Student.get_school()        
 
 # TODO Class methods and static methods
@@ -810,7 +839,7 @@
 # TODO sequence item as instance variable
 # class Student:
 #     def __init__(self,id,name,marks:dict):
-#         self.Student_id=id
+#         self.Student_id=id-
 #         self.student_name=name
 #         self.student_marks=marks
         
@@ -827,7 +856,7 @@
 # s1.display_details()
 # s1.mark_percent() 
 
-#TODO  object of a class is an another object of a class
+# TODO  object of a class is an another object of a class
 # class Company:
 #     def __init__(self,Name,Dir,Loc,Gm):
 #         self.Company_name=Name
@@ -853,4 +882,75 @@
 # e1=Employee('sanin',1001,20,c1)        
 # e1.Print_details()
 
+# TODO map 
+# def square_root (num):
+#     return int(num**(1/2))
 
+# # square_root(16)
+# lists=[9,16,25,49,100,121,1]
+# print(list(map(square_root,lists)))
+# print(list(map(lambda x:int(x**(1/2)),lists)))
+
+# TODO filter
+# lists=[9,16,25,49,100,121,1]
+# print(list(map(lambda x : x%2==1,lists)))
+
+# TODO reduce
+# lists=[1,2,3,4,5,6,7,8,9]
+# from functools import reduce
+# print(reduce(lambda x,y:x+y,lists))
+
+# from abc import ABC, abstractmethod
+
+# class Shape(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# class Square(Shape):
+#     def __init__(self, side):
+#         self.side = side
+    
+#     def area(self):
+#         return self.side ** 2
+
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+    
+#     def area(self):
+#         return 3.14 * self.radius ** 2
+# square = Square(5)
+# print(square.area())
+
+# circle = Circle(3)
+# print(circle.area())
+
+# TODO acces specifiers
+# class student:
+#     def __init__(self,name,age,rollno):
+#         self.name=name
+#         self._age=age
+#         self.__rollno=rollno
+#     def display(self):
+#         print(self.name)
+# # def showData():
+# #     print(s1._age)        
+# # showData()
+# student('sanin',20,101)
+# # print(dir(s1))
+# # s1.display()
+# print(student.display())
+
+
+class A:
+    def __init__(self,name,age):
+        self.__name=name
+        self.age=age
+        
+    def display(self):
+        print(self.__name)
+             
+s1=A('sanin',20)
+print(s1.age)
+print(s1.__name)
