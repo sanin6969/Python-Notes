@@ -10,9 +10,10 @@
 # TODO identity operator
 # a=5
 # b=5
-# c=5.0
-a=[1,2,3,4,5,]
-b=[1,2,3,4,5]
-print(id(a))
-print(id(b))
+# # c=5.0
+# a=[1,2,3,4,5,]
+# b=[1,2,3,4,5]
+# print(id(a))
+# print(id(b))
 # print(id(c))
+
