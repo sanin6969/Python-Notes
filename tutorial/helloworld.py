@@ -943,14 +943,16 @@
 # print(student.display())
 
 
-# class A:
-#     def __init__(self,name,age):
-#         self.__name=name
-#         self.age=age
+class A:
+    def __init__(self,name,age):
+        self.__name=name
+        self.age=age
         
-#     def display(self):
-#         print(self.__name)
+    def display(self):
+        print(self.__name)
              
-# s1=A('sanin',20)
-# print(s1.age)
+s1=A('sanin',20)
+print(s1.age)
+s1.display()
 # print(s1.__name)
+print(s1._A__name)
