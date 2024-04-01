@@ -517,8 +517,9 @@
 
 # TODO pop clear  del
 # marvel={'bucky','steve','ironman','wanda'}
-# # x=marvel.pop()
-# # print(x)
+# x=marvel.pop()
+# print(x)
+# print(marvel)
 # z= marvel.clear()
 # # del marvel
 # print(z)
@@ -740,8 +741,8 @@
 #         print(c)
 #         break
             
-    # finally:
-    #     print('code is finished')    
+#     finally:
+#         print('code is finished')    
     
     
 #                                                   TODO: OOOOOOPS
@@ -886,9 +887,11 @@
 # def square_root (num):
 #     return int(num**(1/2))
 
-# # square_root(16)
+# square_root(16)
 # lists=[9,16,25,49,100,121,1]
+
 # print(list(map(square_root,lists)))
+
 # print(list(map(lambda x:int(x**(1/2)),lists)))
 
 # TODO filter
@@ -943,16 +946,16 @@
 # print(student.display())
 
 
-class A:
-    def __init__(self,name,age):
-        self.__name=name
-        self.age=age
+# class A:
+#     def __init__(self,name,age):
+#         self.__name=name
+#         self.age=age
         
-    def display(self):
-        print(self.__name)
+#     def display(self):
+#         print(self.__name)
              
-s1=A('sanin',20)
-print(s1.age)
-s1.display()
-# print(s1.__name)
-print(s1._A__name)
+# s1=A('sanin',20)
+# print(s1.age)
+# s1.display()
+# # print(s1.__name)
+# print(s1._A__name)

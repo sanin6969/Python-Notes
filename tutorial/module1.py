@@ -7,4 +7,4 @@ def checkposorneg(num):
     else:
         print('number is negative')
         
-# checkposorneg(1)
+checkposorneg(1)
