@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="d-flex">
+            <div class="p-3 flex-grow-1" >
+                <a href="{% url "index" %}" style="text-decoration: none;">  <h1 class="fw-bold "><span class="text-warning">ANIME </span><span class="rounded-4 bg-light text-black">WATCH</span></h1>
+            </a></div>
+            <div class="p-4">
+                <a href="{% url "create" %}"><button type="button" class="btn btn-dark fw-bold">CREATE</button></a>
+                <a href="{% url "list" %}"><button type="button" class="btn btn-dark fw-bold">LIST</button></a>
+                <a href="{% url "signup" %}"><button type="button" class="btn btn-dark fw-bold">SIGNUP</button></a>
+                <a href="{% url "login" %}"><button type="button" class="btn btn-dark fw-bold">LOGIN</button></a>
+            </div>
+        </div>
+        <hr>
+    </body>
+</html>

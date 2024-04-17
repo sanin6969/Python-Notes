@@ -1,0 +1,29 @@
+{% extends "index.html" %} {% load static %} {% block content %}
+<h1
+  style="
+    background-color: orange;
+    color: black;
+    padding: 2px;
+    font-weight: bolder;
+    text-align: center;
+  ">
+  MOVIE LIST
+</h1>
+<div class="d-flex justify-content-evenly">
+  {% for movie in movies %}
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <img src="{{movie.image.url}}" class="card-img-top" alt="..." /> 
+      <h5 class="card-title">TITLE : <span class="text-warning">{{movie.title}}</span> </h5>
+      <p class="card-text">YEAR : {{movie.year}}</p>
+      <p class="card-text">RATING : {{movie.rating}}</p>
+      <p class="card-text">
+        <a type="button" href="{% url 'edit' movie.id %}" class="btn btn-warning">Edit</a>
+        <a type="button" href="{% url 'delete' movie.id %}" class="btn btn-dark">Delete</a>
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
+{% endblock content %} 
+

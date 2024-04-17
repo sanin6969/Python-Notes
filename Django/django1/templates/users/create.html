@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>CREATE USER</h1>
+
+<form method="post">
+  {% csrf_token %}
+  <label>UserName:</label>
+  <input type="text" name="username" />
+  <br />
+  <br />
+  <label>Password:</label>
+  <input type="password" name="password" />
+  <br />
+  <br />
+  <button type="submit">signup</button>
+</form>
+
+{% if user %}
+<p>username is :{{user.username}}</p>
+<p>password is :{{user.password}}</p>
+{% endif %}
+{% if error_message %}
+<p>{{error_message}}</p>
+{% endif %}
+{% endblock content %}
