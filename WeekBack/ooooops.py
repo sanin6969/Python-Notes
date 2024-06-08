@@ -155,28 +155,28 @@
 # sanin.display()
 
 #                                                       TODO:   ABSTRACTON
-# from abc import ABC,abstractclassmethod
-# class Vehicle(ABC):
+from abc import ABC,abstractclassmethod
+class Vehicle(ABC):
     
-#     def __init__(self,n):
-#         self.tyres=n
+    def __init__(self,n):
+        self.tyres=n
         
-#     @abstractclassmethod
-#     def start(self):
-#         pass    
+    @abstractclassmethod
+    def start(self):
+        pass    
     
-#     def display(self):
-#         print('hello from vehicle class')   
+    def display(self):
+        print('hello from vehicle class')   
         
-# class scooter(Vehicle):
-#     def __init__(self, n):
-#         super().__init__(n)
-#     def Print(self):
-#         print(f'no of tyres in scooter is {self.tyres}') 
-#     def start(self):
-#         print('scooter is starting')
-# s=scooter(2)
-# s.Print()
+class scooter(Vehicle):
+    def __init__(self, n):
+        super().__init__(n)
+    def Print(self):
+        print(f'no of tyres in scooter is {self.tyres}') 
+    def start(self):
+        print('scooter is starting')
+s=scooter(2)
+s.Print()
 
 #                                                      TODO: access specifiers
 
